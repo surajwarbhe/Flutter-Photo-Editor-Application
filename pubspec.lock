@@ -91,7 +91,7 @@ packages:
       path: "."
       ref: HEAD
       resolved-ref: cfbc070fdca9ad58a18c2aa6a5b9705a165dfc49
-      url: "git://github.com/codenameakshay/extended_image.git"
+      url: "git@github.com:surajwarbhe/extended_image.git"
     source: git
     version: "1.0.0"
   extended_image_library:
@@ -313,7 +313,7 @@ packages:
       path: "packages/share"
       ref: HEAD
       resolved-ref: "1494b043d03799dd14e689552d1218918435f9f5"
-      url: "git://github.com/codenameakshay/plugins.git"
+      url: "git@github.com:surajwarbhe/plugins.git"
     source: git
     version: "0.6.2+1"
   sky_engine:
