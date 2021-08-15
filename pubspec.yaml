@@ -35,12 +35,12 @@ dependencies:
   image_editor: ^0.7.1
   extended_image:
     git:
-      url: git://github.com/codenameakshay/extended_image.git
+      url: git@github.com:surajwarbhe/extended_image.git
   photo_view: ^0.9.2
   gallery_saver: ^2.0.1
   share:
     git:
-      url: git://github.com/codenameakshay/plugins.git
+      url: git@github.com:surajwarbhe/plugins.git
       path: packages/share
 
 dependency_overrides:
