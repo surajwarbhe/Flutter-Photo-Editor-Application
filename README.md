@@ -1,4 +1,4 @@
-# <div align="center"><img src="android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" alt="icon" width=30> Flutter Image Editor</div>
+# <div align="center"><img src="android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" alt="icon" width=30> FLUTTER PHOTO-EDITOR APPLICATION </div>
 
 <div align="center">This is a beautiful open-source image-editing app for Android/iOS. It is built with Dart on top of Google's Flutter Framework.
 
