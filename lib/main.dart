@@ -1,5 +1,4 @@
 import 'dart:io';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_image_editor/editScreen.dart';
@@ -13,6 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        theme: ThemeData(primaryColor: Colors.deepPurpleAccent[400]),
         debugShowCheckedModeBanner: false,
         home: Scaffold(body: SelectBottomPanel()));
   }
@@ -108,7 +108,7 @@ class _SelectBottomPanelState extends State<SelectBottomPanel> {
                                 child: Opacity(
                                     opacity: 1,
                                     child: Image.asset(
-                                      'assets/images/homescreen.jpg',
+                                      'assets/images/homescreen1.jpg',
                                       fit: BoxFit.cover,
                                     )),
                               ),
@@ -130,7 +130,7 @@ class _SelectBottomPanelState extends State<SelectBottomPanel> {
                                     padding: const EdgeInsets.all(16.0),
                                     child: Icon(
                                       Icons.image,
-                                      color: Theme.of(context).primaryColor,
+                                      color: Theme.of(context).primaryColorDark,
                                       size: 40,
                                     ),
                                   ),
@@ -159,7 +159,7 @@ class _SelectBottomPanelState extends State<SelectBottomPanel> {
             child: Container(
               width: MediaQuery.of(context).size.width * 0.8,
               child: Text(
-                "Select image, and edit them easily in a matter of seconds. Save or share them wherever and whenever you want.",
+                "Easily create and share impactful images and capture the attention of your audiences across your digital platforms",
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 13,

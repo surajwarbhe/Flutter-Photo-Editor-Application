@@ -82,7 +82,7 @@ class _EditPhotoScreenState extends State<EditPhotoScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).primaryColor,
+      backgroundColor: Theme.of(context).primaryColorLight,
       appBar: AppBar(
           title: Text(
             "Edit Image",
@@ -187,11 +187,11 @@ class _EditPhotoScreenState extends State<EditPhotoScreen> {
       items: <BottomNavigationBarItem>[
         BottomNavigationBarItem(
           icon: Icon(
-            Icons.flip,
+            Icons.rotate_left,
             color: Colors.white,
           ),
           title: Text(
-            'Flip',
+            'Rotate left',
             style: TextStyle(
               color: Colors.white,
             ),
@@ -199,11 +199,11 @@ class _EditPhotoScreenState extends State<EditPhotoScreen> {
         ),
         BottomNavigationBarItem(
           icon: Icon(
-            Icons.rotate_left,
+            Icons.flip,
             color: Colors.white,
           ),
           title: Text(
-            'Rotate left',
+            'Flip',
             style: TextStyle(
               color: Colors.white,
             ),
@@ -225,10 +225,10 @@ class _EditPhotoScreenState extends State<EditPhotoScreen> {
       onTap: (int index) {
         switch (index) {
           case 0:
-            flip();
+            rotate(false);
             break;
           case 1:
-            rotate(false);
+            flip();
             break;
           case 2:
             rotate(true);
@@ -310,11 +310,11 @@ class _EditPhotoScreenState extends State<EditPhotoScreen> {
           children: <Widget>[
             Icon(
               Icons.brush,
-              color: Theme.of(context).accentColor,
+              color: Theme.of(context).primaryColor,
             ),
             Text(
               "Saturation",
-              style: TextStyle(color: Theme.of(context).accentColor),
+              style: TextStyle(color: Theme.of(context).primaryColor),
             )
           ],
         ),
@@ -352,13 +352,10 @@ class _EditPhotoScreenState extends State<EditPhotoScreen> {
         ),
         Column(
           children: <Widget>[
-            Icon(
-              Icons.brightness_4,
-              color: Theme.of(context).accentColor,
-            ),
+            Icon(Icons.brightness_4, color: Theme.of(context).primaryColor),
             Text(
               "Brightness",
-              style: TextStyle(color: Theme.of(context).accentColor),
+              style: TextStyle(color: Theme.of(context).primaryColor),
             )
           ],
         ),
@@ -398,11 +395,11 @@ class _EditPhotoScreenState extends State<EditPhotoScreen> {
           children: <Widget>[
             Icon(
               Icons.color_lens,
-              color: Theme.of(context).accentColor,
+              color: Theme.of(context).primaryColor,
             ),
             Text(
               "Contrast",
-              style: TextStyle(color: Theme.of(context).accentColor),
+              style: TextStyle(color: Theme.of(context).primaryColor),
             )
           ],
         ),

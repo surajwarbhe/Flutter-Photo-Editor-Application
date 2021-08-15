@@ -110,6 +110,7 @@ class _SaveImageScreenState extends State<SaveImageScreen> {
                       heroTag: "SHARE",
                       icon: Icon(Icons.share),
                       label: Text("SHARE"),
+                      backgroundColor: Theme.of(context).primaryColor,
                       onPressed: () {
                         shareImage();
                       }),
@@ -127,7 +128,7 @@ class _SaveImageScreenState extends State<SaveImageScreen> {
                     child: Center(
                       child: Icon(
                         Icons.info,
-                        color: Theme.of(context).accentColor.withOpacity(0.6),
+                        color: Theme.of(context).primaryColor.withOpacity(0.6),
                       ),
                     ),
                   ),
