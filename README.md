@@ -10,9 +10,8 @@ This app offers image editing features like Saturation, Brightness, Crop, Contra
 
 1. [Features](#features)
 2. [Demo](#demo)
-3. [Support](#support)
-4. [Dependencies](#dependencies)
-5. [Contributing](#contributing)
+3. [Dependencies](#dependencies)
+5. [License](#license)
 
 ## Features
 
